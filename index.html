@@ -4,39 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eureka.me</title>
-    <style>
-        body{
-            background-color: #e5e5e5;
-            color: #25282b;
-            text-align: center;
-        }
-
-        button{
-            color: #ff5e84;
-            border: none;
-            background:none;
-            font-weight: bold;
-        }
-
-        button.fat{
-            color: #fff;
-            background: #ff5e84;
-        }
-
-        #footer a{
-            color: #25282b;
-            text-decoration: none;
-        }
-
-        .hide{
-            display: none;
-        }
-        img{
-            width: 250px;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <img src="logo.png" alt="Eureka.me">
@@ -48,16 +16,6 @@
 
     <p id="footer">with Love <a href="#!">Krydev</a></p>
 
-    <script>
-        document
-        .querySelector("button.fat")
-        .addEventListener('click',function(){
-            document
-            .querySelector('#footer')
-            .classList
-            .toggle('hide')
-        })
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
