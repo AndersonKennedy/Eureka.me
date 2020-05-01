@@ -1,30 +1,83 @@
 body{
     background-color: #e5e5e5;
     color: #25282b;
-    text-align: center;
-}
-
-button{
-    color: #ff5e84;
-    border: none;
-    background:none;
-    font-weight: bold;
-}
-
-button.fat{
-    color: #fff;
-    background: #ff5e84;
-}
-
-#footer a{
-    color: #25282b;
-    text-decoration: none;
+    margin: 0;
 }
 
 .hide{
     display: none;
 }
 
+a{
+    color: #25282b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+#container{
+    width: 90%;
+    max-width: 980px;
+    margin: 40px auto;
+    display: flex;
+}
+
+#intro{
+    width: 400px;
+    margin-right: 20px;
+}
+
+main{
+    margin: 32px 0;
+
+}
+
+#buttons{
+    display: flex;
+    margin-bottom: 32px;
+    justify-content: space-evenly;
+}
+
+#buttons{
+}
+button{
+    color: #ff5e84;
+    border: none;
+    background:none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+}
+
+button:hover{
+    text-decoration: underline;
+}
+
+button.fat{
+    color: #fff;
+    background: #ff5e84;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px #ff5e8432;
+    /*box-shadow: x y blur cor;*/
+}
+
+button.fat:hover{
+    text-decoration: none;
+}
+
+#buttons, footer{
+    text-align: center;
+}
+
+
 img{
     width: 250px;
+}
+
+footer a:hover{
+    color: #ff5e84;
+    font-weight: bold;
 }
