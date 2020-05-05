@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-ideas">
+
+    <div id="container">
+
+        
+    <header>
+        <img src="logo.png" class="logo" alt="Eureka.me">
+        <nav>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Ideias</a></li>
+            <li><a href="#" onclick="onOff()">Nova Ideia</a></li>
+        </nav>
+    </header>
+    <section id="title">
+        <p>Em exibição</p>
+        <h1>Ideias</h1>
+    </section>
+    
+    <section id="ideias">
+        <div class="idea">
+            <img src="img/code.png" alt="imagem">
+
+            <div class="content">
+                <h3>Curso de programação</h3>
+                <p>estudo</p>
+                <div class="description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, cumque dignissimos et tempora fugit laudantium odio debitis delectus veniam veritatis. Hic, obcaecati!
+                </div>
+                <a href="#">Ir para a ideia</a>
+            </div>
+        </div>
+        <div class="idea">
+            <img src="img/design.png" alt="imagem">
+
+            <div class="content">
+                <h3>Curso de Design</h3>
+                <p>Design</p>
+                <div class="description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, cumque dignissimos et tempora fugit laudantium odio debitis delectus veniam veritatis. Hic, obcaecati!
+                </div>
+                <a href="#">Ir para a ideia</a>
+            </div>
+        </div>
+        <div class="idea">
+            <img src="img/extreme.png" alt="imagem">
+
+            <div class="content">
+                <h3>Extreme 21</h3>
+                <p>Fitness</p>
+                <div class="description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, cumque dignissimos et tempora fugit laudantium odio debitis delectus veniam veritatis. Hic, obcaecati!
+                </div>
+                <a href="#">Ir para a ideia</a>
+            </div>
+        </div>
+    </section>
+    <footer>with Love <a href="#!">Krydev</a></footer>
+
+    </div>
+
+    
+  <!-- Modal -->
+  <div id="modal" class="hide">
+    <div class="content">
+        <h1>Nova Ideia</h1>
+
+        <form action="">
+
+          <div class="input-wrapper">
+              <label for="title">Titulo da Ideia</label>
+              <input type="text" name="title">
+          </div>
+
+          <div class="input-wrapper">
+              <label for="category">Categoria</label>
+              <input type="text" name="category">
+          </div>
+
+          <div class="input-wrapper">
+              <label for="image">Link da imagem</label>
+              <input type="url" name="image">
+          </div>
+
+          <div class="input-wrapper">
+              <label for="description">Digite ma descrição para essa ideia</label>
+              <textarea name="description" id="" cols="30" rows="6"></textarea>
+  
+          </div>
+
+          <div class="input-wrapper">
+              <label for="link">Link da ideia</label>
+              <input type="url" name="link">
+          </div>
+          
+          <a href="#" onclick="onOff()">Voltar</a>
+          <button>Salvar</button>
+
+        </form>
+    </div>
+</div>  
+ 
+<script src="script.js"></script>
+</body>
+</html>
