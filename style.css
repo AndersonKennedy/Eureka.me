@@ -8,7 +8,12 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
-    overflow-x: hidden;
+    overflow: hidden;
+}
+
+body.activeScroll{
+    overflow-y: auto;
+
 }
 
 a{
@@ -233,7 +238,6 @@ form button:hover{
 }
 
 #modal.hide{
-    
     visibility: hidden;
     opacity: 0;
     /*display: none;*/
