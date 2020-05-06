@@ -6,13 +6,15 @@
     <title>Eureka.me</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="main">
 
     <div id="container">
 
         <section id="intro">
             <header>
-                <img src="logo.png" class="logo" alt="Eureka.me">
+                <a href="index.html">
+                    <img src="logo.png" class="logo" alt="Eureka.me">
+                </a>
             </header>
 
             <main>
@@ -23,7 +25,7 @@
 
             <section id="buttons">
                 <button onclick="onOff()">+ Adicionar Ideia</button>
-                <button class="fat">+ Ver Ideias</button>
+                <a href="ideias.html" class="button">Ver Ideias</a>
             </section>
 
             <footer>with Love <a href="#!">Krydev</a></footer>
@@ -95,7 +97,7 @@
 
             <div class="input-wrapper">
                 <label for="description">Digite ma descrição para essa ideia</label>
-                <textarea name="description" id="" cols="30" rows="6"></textarea>
+                <textarea name="description" id="" cols="30" rows="4"></textarea>
     
             </div>
 

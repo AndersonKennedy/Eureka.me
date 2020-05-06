@@ -13,11 +13,12 @@
 
         
     <header>
-        <img src="logo.png" class="logo" alt="Eureka.me">
+        <a href="index.html">
+            <img src="logo.png" class="logo" alt="Eureka.me">
+        </a>
         <nav>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Ideias</a></li>
-            <li><a href="#" onclick="onOff()">Nova Ideia</a></li>
+            <li><a href="#"class="button" onclick="onOff()">Nova Ideia</a></li>
         </nav>
     </header>
     <section id="title">
@@ -62,6 +63,18 @@
                 <a href="#">Ir para a ideia</a>
             </div>
         </div>
+        <div class="idea">
+            <img src="img/code.png" alt="imagem">
+
+            <div class="content">
+                <h3>Curso de programação</h3>
+                <p>estudo</p>
+                <div class="description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, cumque dignissimos et tempora fugit laudantium odio debitis delectus veniam veritatis. Hic, obcaecati!
+                </div>
+                <a href="#">Ir para a ideia</a>
+            </div>
+        </div>
     </section>
     <footer>with Love <a href="#!">Krydev</a></footer>
 
@@ -92,7 +105,7 @@
 
           <div class="input-wrapper">
               <label for="description">Digite ma descrição para essa ideia</label>
-              <textarea name="description" id="" cols="30" rows="6"></textarea>
+              <textarea name="description" id="" cols="30" rows="4"></textarea>
   
           </div>
 
