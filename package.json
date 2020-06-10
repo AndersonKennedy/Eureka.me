@@ -9,5 +9,8 @@
   },
   "keywords": [],
   "author": "Anderson Kennedy <andersonkennedydev@gmail.com>",
-  "license": "MIT"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
