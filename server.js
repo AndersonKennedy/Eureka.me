@@ -2,6 +2,38 @@
 const express = require("express")
 const server = express()
 
+//variaveis
+const ideas = [
+    {
+        img:"/img/code.png",
+        title:"Curso de programação",
+        category:"Estudo",
+        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, cumque dignissimos et tempora fugit laudantium odio debitis delectus veniam veritatis. Hic, obcaecati!",
+        url:"https://facebook.com",
+    },
+    {
+        img:"/img/design.png",
+        title:"Curso de Design",
+        category:"Design",
+        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, cumque dignissimos et tempora fugit laudantium odio debitis delectus veniam veritatis. Hic, obcaecati!",
+        url:"https://facebook.com",
+    },
+    {
+        img:"/img/extreme.png",
+        title:"Extreme 21",
+        category:"Fitness",
+        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, cumque dignissimos et tempora fugit laudantium odio debitis delectus veniam veritatis. Hic, obcaecati!",
+        url:"https://facebook.com",
+    },
+    {
+        img:"/img/code.png",
+        title:"Curso de programação",
+        category:"Estudo",
+        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, cumque dignissimos et tempora fugit laudantium odio debitis delectus veniam veritatis. Hic, obcaecati!",
+        url:"https://facebook.com",
+    }
+]
+
 //Configurar arquivos estaticos
 server.use(express.static("public"))
 
@@ -12,15 +44,22 @@ nunjucks.configure("views",{
     noCache: true,
 })
 
-
 //criando rotas
 server.get("/",function(req, res){
-    const h1 = "Olá do Backend"
-    return res.render("index.html",{ title: h1 })
+
+    let lastIdeas = []
+    for (let idea of ideas.reverse()){
+        if (lastIdeas.length < 3) {
+            lastIdeas.push(idea)
+        }
+    }
+
+    return res.render("index.html", {lastIdeas})
 })
 
 server.get("/ideias",function(req, res){
-    return res.render("ideias.html")
+
+    return res.render("ideias.html",{ ideas: ideas.reverse() })
 })
 
 //ligar o servidor na porta 3000

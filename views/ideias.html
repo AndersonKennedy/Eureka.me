@@ -27,54 +27,22 @@
     </section>
     
     <section id="ideias">
-        <div class="idea">
-            <img src="/img/code.png" alt="imagem">
+        
+        {% for idea in ideas %}
+            <div class="idea">
+                <img src={{idea.img}} alt="imagem de {{idea.img}}">
 
-            <div class="content">
-                <h3>Curso de programação</h3>
-                <p>estudo</p>
-                <div class="description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, cumque dignissimos et tempora fugit laudantium odio debitis delectus veniam veritatis. Hic, obcaecati!
+                <div class="content">
+                    <h3>{{idea.title}}</h3>
+                    <p>{{idea.category}}</p>
+                    <div class="description">
+                        {{idea.description}}
+                    </div>
+                    <a href="{{idea.url}}" target="_blank">Ir para a ideia</a>
                 </div>
-                <a href="#">Ir para a ideia</a>
             </div>
-        </div>
-        <div class="idea">
-            <img src="/img/design.png" alt="imagem">
+        {% endfor %}
 
-            <div class="content">
-                <h3>Curso de Design</h3>
-                <p>Design</p>
-                <div class="description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, cumque dignissimos et tempora fugit laudantium odio debitis delectus veniam veritatis. Hic, obcaecati!
-                </div>
-                <a href="#">Ir para a ideia</a>
-            </div>
-        </div>
-        <div class="idea">
-            <img src="/img/extreme.png" alt="imagem">
-
-            <div class="content">
-                <h3>Extreme 21</h3>
-                <p>Fitness</p>
-                <div class="description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, cumque dignissimos et tempora fugit laudantium odio debitis delectus veniam veritatis. Hic, obcaecati!
-                </div>
-                <a href="#">Ir para a ideia</a>
-            </div>
-        </div>
-        <div class="idea">
-            <img src="/img/code.png" alt="imagem">
-
-            <div class="content">
-                <h3>Curso de programação</h3>
-                <p>estudo</p>
-                <div class="description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, cumque dignissimos et tempora fugit laudantium odio debitis delectus veniam veritatis. Hic, obcaecati!
-                </div>
-                <a href="#">Ir para a ideia</a>
-            </div>
-        </div>
     </section>
     <footer>with Love <a href="#!">Krydev</a></footer>
 

@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body id="main">
-    <h1>{{title}}</h1>
-
     <div id="container">
 
         <section id="intro">
@@ -34,42 +32,22 @@
         </section>
 
         <section id="last-ideas">
+
+        {% for idea in lastIdeas %}
             <div class="idea">
-                <img src="/img/code.png" alt="imagem">
+                <img src={{idea.img}} alt="imagem de {{idea.img}}">
 
                 <div class="content">
-                    <h3>Curso de programação</h3>
-                    <p>estudo</p>
+                    <h3>{{idea.title}}</h3>
+                    <p>{{idea.category}}</p>
                     <div class="description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, cumque dignissimos et tempora fugit laudantium odio debitis delectus veniam veritatis. Hic, obcaecati!
+                        {{idea.description}}
                     </div>
-                    <a href="#">Ir para a ideia</a>
+                    <a href="{{idea.url}}" target="_blank">Ir para a ideia</a>
                 </div>
             </div>
-            <div class="idea">
-                <img src="/img/design.png" alt="imagem">
+        {% endfor %}
 
-                <div class="content">
-                    <h3>Curso de Design</h3>
-                    <p>Design</p>
-                    <div class="description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, cumque dignissimos et tempora fugit laudantium odio debitis delectus veniam veritatis. Hic, obcaecati!
-                    </div>
-                    <a href="#">Ir para a ideia</a>
-                </div>
-            </div>
-            <div class="idea">
-                <img src="/img/extreme.png" alt="imagem">
-
-                <div class="content">
-                    <h3>Extreme 21</h3>
-                    <p>Fitness</p>
-                    <div class="description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, cumque dignissimos et tempora fugit laudantium odio debitis delectus veniam veritatis. Hic, obcaecati!
-                    </div>
-                    <a href="#">Ir para a ideia</a>
-                </div>
-            </div>
         </section>
 
     </div>
