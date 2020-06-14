@@ -47,8 +47,9 @@ nunjucks.configure("views",{
 //criando rotas
 server.get("/",function(req, res){
 
+    const reverseIdeas = [...ideas].reverse()//extraindo   
     let lastIdeas = []
-    for (let idea of ideas.reverse()){
+    for (let idea of reverseIdeas){
         if (lastIdeas.length < 3) {
             lastIdeas.push(idea)
         }
@@ -58,8 +59,8 @@ server.get("/",function(req, res){
 })
 
 server.get("/ideias",function(req, res){
-
-    return res.render("ideias.html",{ ideas: ideas.reverse() })
+    const reverseIdeas = [...ideas].reverse()  
+    return res.render("ideias.html",{ ideas: reverseIdeas })
 })
 
 //ligar o servidor na porta 3000
