@@ -55,7 +55,7 @@ server.get("/",function(req, res){
         }
     }
 
-    return res.render("index.html", {lastIdeas})
+    return res.render("index.html", {ideas: lastIdeas})
 })
 
 server.get("/ideias",function(req, res){
